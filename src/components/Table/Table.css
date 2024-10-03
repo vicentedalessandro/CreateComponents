@@ -1,0 +1,63 @@
+.table-wrapper {
+  width: fit-content;
+  height: fit-content;
+  border-radius: .5rem;
+  overflow: hidden; 
+  margin: 1rem;
+  border: 1px solid #eee; 
+}
+
+.Table {
+  font-size: 16px;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.Table-head .Table-row, .Table-foot .Table-row{
+  background-color: #ffffff;
+}
+
+.Table-row {
+  background-color: #fafbfd;
+}
+
+.Table-row:nth-child(even) {
+  background-color: #ffffff;
+}
+
+
+.Table-field, .Table-data, .Table-index {
+  padding: .5rem 1rem;
+  border: 1px solid #eee;
+}
+
+.Table-field:first-child, .Table-data:first-child, .Table-index:first-child {
+  border-left: none;
+}
+
+.Table-field:last-child, .Table-data:last-child, .Table-index:last-child {
+  border-right: none;
+}
+
+.Table-foot .Table-data {
+  border: none;
+}
+
+.Table-field, .Table-index {
+  font-weight: 500;
+}
+
+.Table-field {
+  border-top: none;
+}
+
+.Table-index {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Table-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
