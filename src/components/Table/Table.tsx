@@ -5,6 +5,9 @@ import Button from '../Button/Button.tsx'
 function Table({data}:{data: Person[]}) {
   return (
     <div className='table-wrapper'>
+      <menu className='Menu'>
+                <Button className='AddButton' aria-label='Agregar fila'>Agregar</Button>
+      </menu>
       <table className='Table'>
         <thead className='Table-head'>
           <tr className='Table-row'>
@@ -33,15 +36,6 @@ function Table({data}:{data: Person[]}) {
             ))
           }
         </tbody>
-        <tfoot className='Table-foot'>
-          <tr className='Table-row'>
-            <td className='Table-data' colSpan={data.length + 1}>
-              <menu className='Table-menu'>
-                <Button className='AddButton' aria-label='Agregar fila'>Agregar</Button>
-              </menu>
-            </td>
-          </tr>
-        </tfoot>
       </table>
     </div>
   )
