@@ -1,6 +1,10 @@
 import './App.css'
 import Table from './components/Table/Table.tsx'
+import Input from './components/Input/Input.tsx'
 import { Person } from './types/Person.ts'
+import Loader from './components/Spinner/Spinner.tsx'
+import ProgressBar from './components/ProgressBar/ProgressBar.tsx'
+import Button from './components/Button/Button.tsx'
 
 const persons: Person[] = [
   {
@@ -40,6 +44,10 @@ function App() {
   return (
     <>
       <Table data={persons}></Table>
+      <Button>Botón</Button>
+      <Input type='text' id='input01' placeholder='Placeholder' required/>
+      <Loader></Loader>
+      <ProgressBar></ProgressBar>
     </>
   )
 }

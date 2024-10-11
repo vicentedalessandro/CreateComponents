@@ -4,9 +4,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
 }
 
-function Button ({ className, ...props }: ButtonProps) {
+function Button({ className, ...props }: ButtonProps) {
   return (
-    <button className={`Button ${className || ''}`} {...props}/>
+    <button className={`Button${className ? ` ${className}` : ''}`} {...props}/>
   )
 }
 

@@ -2,7 +2,7 @@ import './Table.css'
 import { Person } from '../../types/Person.ts'
 import Button from '../Button/Button.tsx'
 
-function Table({data}:{data: Person[]}) {
+function Table({ data }: { data: Person[] }) {
   return (
     <div className='table-wrapper'>
       <menu className='Menu'>
