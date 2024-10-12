@@ -1,8 +1,8 @@
-.Input-container {
+.Input {
   width: 200px;
   position: relative;
 }
-.Input {
+.Input-field {
   font-size: 16px;
   background-color: transparent;
   width: 100%;
@@ -22,16 +22,11 @@
   transition: all 0.3s ease;
   pointer-events: none;
 }
-.Input:focus + .Input-label, .Input:valid + .Input-label{
+.Input-field:focus + .Input-label, .Input-field:valid + .Input-label{
   top: -15px;
   font-size: 16px;
   color: var(--main-color);
 }
-/* .Input:invalid + .Input-label{
-  top: 8px;
-  font-size: initial;
-  color: #ccc;
-} */
-.Input:required, .Input:invalid {
+.Input-field:required, .Input-field:invalid {
   background-color: transparent;
 }
