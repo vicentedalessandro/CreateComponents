@@ -21,6 +21,14 @@
   transform: scale(75%);
 }
 
+.Button:disabled {
+  fill: #ffffff;
+  background-color: #ccc;
+  border: 2px solid #ccc;
+  transform: scale(100%);
+}
+
+
 .AddButton {
   color: #008d3f;
   border: 2px solid #008d3f;

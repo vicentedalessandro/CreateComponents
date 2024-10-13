@@ -7,7 +7,6 @@
   background-color: rgba(0,0,0,0.2);
   position: relative;
 }
-
 .ProgressBar::before {
   content: "";
   position: absolute;
@@ -18,14 +17,12 @@
   height: 100%;
   border-radius: 30px;
   animation: moving 1s ease-in-out infinite;
-  ;
 }
 
 @keyframes moving {
   50% {
     width: 100%;
   }
-
   100% {
     width: 0;
     right: 0;

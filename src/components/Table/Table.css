@@ -4,59 +4,37 @@
   overflow: hidden; 
   margin: 1rem;
 }
-
 .Table {
   font-size: 16px;
   text-align: left;
   border-collapse: collapse;
 }
-
 .Table-head .Table-row {
   height: 3rem;
   color: #212121;
   background-color: #f0f0f0;
 }
-
 .Table-row {
   background-color: #ffffff;
 }
-
-/* .Table-row:nth-child(even) {
-  background-color: #ffffff;
-} */
-
-
 .Table-field, .Table-data, .Table-index {
   padding: .5rem 1rem;
 }
-
 .Table-data, .Table-index {
   border-bottom: 1px solid #f0f0f0;
 }
-
-/* .Table-field:first-child, .Table-data:first-child, .Table-index:first-child {
-  border-left: none;
-}
-
-.Table-field:last-child, .Table-data:last-child, .Table-index:last-child {
-  border-right: none;
-} */
-
 .Table-field, .Table-index {
   font-weight: 500;
 }
-
 .Table-index {
   text-align: center;
   vertical-align: middle;
 }
-
 .Table-menu {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
 .Menu {
   display: flex;
   justify-content: right;

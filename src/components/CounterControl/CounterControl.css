@@ -46,3 +46,7 @@
 .Button--increment:hover , .Button--decrement:hover {
   fill: #ffffff;
 }
+
+.Button--increment:disabled , .Button--decrement:disabled {
+  fill: #ffffff;
+}
