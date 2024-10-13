@@ -12,14 +12,13 @@
   transition: all 150ms ease;
 }
 
-.Button:active {
-  filter: saturate(.5);
-}
-
 .Button:hover {
   color: #ffffff;
   background-color: var(--main-color);
-  transform: scale(105%);
+}
+
+.Button:active {
+  transform: scale(75%);
 }
 
 .AddButton {

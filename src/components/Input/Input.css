@@ -21,6 +21,7 @@
   left: 3px;
   transition: all 0.3s ease;
   pointer-events: none;
+  user-select: none;
 }
 .Input-field:focus + .Input-label, .Input-field:valid + .Input-label{
   top: -15px;

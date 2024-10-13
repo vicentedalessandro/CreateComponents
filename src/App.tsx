@@ -8,6 +8,8 @@ import Button from './components/Button/Button.tsx'
 import Checkbox from './components/Checkbox/Checkbox.tsx'
 import IconContainer from './components/IconContainer/IconContainer.tsx'
 import { Icon } from './types/Icon.ts'
+import Password from './components/Password/Password.tsx'
+import CounterControl from './components/CounterControl/CounterControl.tsx'
 
 const persons: Person[] = [
   {
@@ -57,6 +59,7 @@ function App() {
       <br />
       <Button>Botón</Button>
       <Input type='text' id='input01' placeholder='Placeholder' required/>
+      <Password id='input02' placeholder='Password' required/>
       <Checkbox id='checkbox01'>Checkbox</Checkbox>
       <br />
       <br />
@@ -67,6 +70,7 @@ function App() {
       <IconContainer icon={circleXMarkIcon} className='Icon-circleXMark' />
       <br />
       <br />
+      <CounterControl></CounterControl>
     </>
   )
 }

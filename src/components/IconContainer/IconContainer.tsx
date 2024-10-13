@@ -15,7 +15,7 @@ function IconContainer({ icon, className, ...props }: IconContainerProps) {
       {...props}
     >
       {
-        icon.paths.map(d => (<path d={d}/>))
+        icon.paths.map(d => (<path d={d} key={crypto.randomUUID()}/>))
       }
     </svg>
   )
