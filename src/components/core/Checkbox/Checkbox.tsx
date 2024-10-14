@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './Checkbox.css'
+import { useState } from 'react'
 
 interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string

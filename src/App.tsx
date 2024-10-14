@@ -1,16 +1,17 @@
 import './App.css'
-import Table from './components/Table/Table.tsx'
-import Input from './components/Input/Input.tsx'
 import { Person } from './types/Person.ts'
-import Loader from './components/Spinner/Spinner.tsx'
-import ProgressBar from './components/ProgressBar/ProgressBar.tsx'
-import Button from './components/Button/Button.tsx'
-import Checkbox from './components/Checkbox/Checkbox.tsx'
-import IconContainer from './components/IconContainer/IconContainer.tsx'
 import { Icon } from './types/Icon.ts'
-import Password from './components/Password/Password.tsx'
-import CounterControl from './components/CounterControl/CounterControl.tsx'
-import Select from './components/Select/Select.tsx'
+import IconContainer from './components/core/IconContainer/IconContainer.tsx'
+import ProgressBar from './components/core/ProgressBar/ProgressBar.tsx'
+import Loader from './components/core/Spinner/Spinner.tsx'
+import Button from './components/core/Button/Button.tsx'
+import Input from './components/core/Input/Input.tsx'
+import Password from './components/core/Password/Password.tsx'
+import Checkbox from './components/core/Checkbox/Checkbox.tsx'
+import CounterControl from './components/core/CounterControl/CounterControl.tsx'
+import Select from './components/core/Select/Select.tsx'
+import Popup from './components/core/Popup/Popup.tsx'
+import Table from './components/core/Table/Table.tsx'
 
 const persons: Person[] = [
   {
@@ -30,18 +31,6 @@ const persons: Person[] = [
     nombre: 'Julian',
     email: 'julian@gmail.com',
     tel: '2364-121212'
-  },
-  {
-    id: 4,
-    nombre: 'Agustín',
-    email: 'agustín@gmail.com',
-    tel: '2364-454545'
-  },
-  {
-    id: 5,
-    nombre: 'David',
-    email: 'david@gmail.com',
-    tel: '2364-797979'
   }
 ]
 
@@ -54,7 +43,6 @@ const circleXMarkIcon: Icon = {
 const options = ['miguel', 'california', 'pepper']
 
 function App() {
-
   return (
     <>
       <Table data={persons}></Table>
@@ -77,6 +65,7 @@ function App() {
       <CounterControl></CounterControl>
       <br />
       <br />
+      <Popup><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, fugiat nisi ab sit odio in odit optio soluta veniam.</p></Popup>
     </>
   )
 }

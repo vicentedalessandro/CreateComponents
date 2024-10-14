@@ -1,0 +1,90 @@
+.table-wrapper {
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden; 
+  margin: 1rem;
+}
+.Table {
+  font-size: 16px;
+  text-align: left;
+  border-collapse: collapse;
+}
+.Table-head .Table-row {
+  height: 3rem;
+  color: #212121;
+  background-color: #f0f0f0;
+}
+.Table-row {
+  background-color: #ffffff;
+}
+.Table-field, .Table-data, .Table-index {
+  padding: .5rem 1rem;
+}
+.Table-data, .Table-index {
+  border-bottom: 1px solid #f0f0f0;
+}
+.Table-field, .Table-index {
+  font-weight: 500;
+}
+.Table-index {
+  text-align: center;
+  vertical-align: middle;
+}
+.Table-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.Menu {
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
+}
+.AddButton {
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #008d3f;
+  display: flex;
+  align-items: center;
+  padding: .4rem 1rem .4rem .5rem;
+  border: 2px solid #008d3f;
+}
+.AddButton svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+.AddButton:hover {
+  fill: #008d3f;
+  color: #008d3f;
+  background-color: #ffffff;
+}
+.EditButton {
+  
+  fill: #ffffff;
+  background-color: #0073df;
+  padding: .25rem .25rem 0rem .25rem;
+  border: 2px solid #0073df;
+}
+.EditButton svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.EditButton:hover {
+  fill: #0073df;
+  background-color: #ffffff;
+}
+.DeleteButton {
+  
+  fill: #ffffff;
+  background-color: #e7004d;
+  padding: .25rem .25rem 0rem .25rem;
+  border: 2px solid #e7004d;
+}
+.DeleteButton svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.DeleteButton:hover {
+  fill: #e7004d;
+  background-color: #ffffff;
+}

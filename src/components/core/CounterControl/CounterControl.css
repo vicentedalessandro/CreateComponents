@@ -29,7 +29,7 @@
   left: 0;
 }
 .Button--increment, .Button--decrement {
-  fill: var(--main-color);
+  fill: #ffffff;
   width: 38px;
   height: 38px;
   display: flex;
@@ -44,7 +44,7 @@
 }
 
 .Button--increment:hover , .Button--decrement:hover {
-  fill: #ffffff;
+  fill: var(--main-color);
 }
 
 .Button--increment:disabled , .Button--decrement:disabled {

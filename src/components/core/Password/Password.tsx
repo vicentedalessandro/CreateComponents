@@ -1,7 +1,7 @@
-import { lazy, useState } from 'react'
-import { Icon } from '../../types/Icon.ts'
 import '../Input/Input.css'
 import './Password.css'
+import { lazy, useState } from 'react'
+import { Icon } from '../../../types/Icon.ts'
 
 const IconContainer = lazy(() => import('../IconContainer/IconContainer.tsx'))
 

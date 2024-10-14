@@ -1,8 +1,8 @@
-import { lazy, useState } from 'react'
-import { Icon } from '../../types/Icon.ts'
 import './CounterControl.css'
-import Button from '../Button/Button'
-import Input from '../Input/Input'
+import { lazy, useState } from 'react'
+import { Icon } from '../../../types/Icon.ts'
+import Button from '../Button/Button.tsx'
+import Input from '../Input/Input.tsx'
 
 const IconContainer = lazy(() => import('../IconContainer/IconContainer.tsx'))
 
@@ -19,10 +19,10 @@ const minusIcon: Icon = {
 }
 
 function CounterControl() {
-  const [value, setValue] = useState(0)
   const min = 1
   const max = 9
-
+  const [value, setValue] = useState(min)
+  
   const handleIncrement = () => {
     setValue(value + 1)
   }

@@ -1,0 +1,31 @@
+.Popup {
+  max-width: 400px;
+  max-height: max-content;
+  position: fixed;
+  bottom: 2rem; /*50%*/
+  left: 50%;
+  transform: translate(-50%, 0%); /*-50, -50 (centro)*/
+  padding: 1rem 3.5rem 1rem 1rem;
+  border: none;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  box-shadow: 0 .25rem .5rem .1rem #00000025;
+}
+.Popup-container {
+  display: flex;
+  flex-direction: column;
+}
+.Popup-cancel {
+  fill: #ffffff;
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  padding: .25rem .25rem 0 .25rem;
+}
+.Popup-cancel:hover {
+  fill: var(--main-color);
+}
+.Popup-cancel svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
