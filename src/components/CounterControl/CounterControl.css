@@ -39,8 +39,8 @@
 }
 
 .CounterControl .IconContainer {
-  width: 1rem;
-  height: auto;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 
 .Button--increment:hover , .Button--decrement:hover {

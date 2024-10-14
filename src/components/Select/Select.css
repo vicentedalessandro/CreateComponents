@@ -1,0 +1,48 @@
+.Select {
+  width: 208px;
+  position: relative;
+}
+.Select-label {
+  color: #ccc;
+  width: 100%;
+  position: absolute;
+  top: -15px;
+  left: 3px;
+  user-select: none;
+}
+.Select-field {
+  appearance: none;
+  font-size: 16px;
+  background-color: transparent;
+  width: 100%;
+  padding: 0.5rem .25rem;
+  border: none;
+  border-bottom: 3px solid var(--main-color);
+  outline: none;
+  cursor: pointer;
+}
+
+.Select::after {
+  content: '⌵'; /* Puedes reemplazar este ícono */
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000; /* Cambia el color de la flecha */
+  position: absolute;
+  right: 4px;
+  top: 18px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Evita que el ícono interfiera con la selección */
+}
+.Select-defaultOption {
+  color: #ccc;
+}
+.Select-option {
+  color: initial;
+}
+.Select-field:focus + .Select-label {
+  color: var(--main-color);
+}
+.Select-field:invalid {
+  color: #ccc;
+}
+/* .Select-field:required {} */

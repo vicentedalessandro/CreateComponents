@@ -23,10 +23,15 @@
   pointer-events: none;
   user-select: none;
 }
-.Input-field:focus + .Input-label, .Input-field:valid + .Input-label{
+.Input-field:focus + .Input-label {
   top: -15px;
   font-size: 16px;
   color: var(--main-color);
+}
+.Input-field:valid + .Input-label {
+  top: -15px;
+  font-size: 16px;
+  color: var(--main-color); /*Ver la posibilidad de otro color o no*/
 }
 .Input-field:required, .Input-field:invalid {
   background-color: transparent;

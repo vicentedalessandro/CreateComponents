@@ -10,6 +10,7 @@ import IconContainer from './components/IconContainer/IconContainer.tsx'
 import { Icon } from './types/Icon.ts'
 import Password from './components/Password/Password.tsx'
 import CounterControl from './components/CounterControl/CounterControl.tsx'
+import Select from './components/Select/Select.tsx'
 
 const persons: Person[] = [
   {
@@ -50,6 +51,8 @@ const circleXMarkIcon: Icon = {
   paths: ["M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"]
 }
 
+const options = ['miguel', 'california', 'pepper']
+
 function App() {
 
   return (
@@ -58,8 +61,9 @@ function App() {
       <br />
       <br />
       <Button>Botón</Button>
-      <Input type='text' id='input01' placeholder='Placeholder' required/>
-      <Password id='input02' placeholder='Password' required/>
+      <Input type='text' id='input01' placeholder='Placeholder' required />
+      <Password id='input02' placeholder='Password' required />
+      <Select id='select01' options={options} required >Selection</Select>
       <Checkbox id='checkbox01'>Checkbox</Checkbox>
       <br />
       <br />
@@ -71,6 +75,8 @@ function App() {
       <br />
       <br />
       <CounterControl></CounterControl>
+      <br />
+      <br />
     </>
   )
 }

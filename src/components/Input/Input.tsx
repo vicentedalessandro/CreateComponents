@@ -1,6 +1,5 @@
 import './Input.css'
 
-
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string
   type?: 'email' | 'number' | 'tel' | 'text'

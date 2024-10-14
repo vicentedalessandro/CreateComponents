@@ -8,22 +8,20 @@ const IconContainer = lazy(() => import('../IconContainer/IconContainer.tsx'))
 
 const plusIcon: Icon = {
   xmlns: "http://www.w3.org/2000/svg",
-  viewBox: "0 0 448 512",
-  paths: ["M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"]
+  viewBox: "0 -960 960 960",
+  paths: ["M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z"]
 }
 
 const minusIcon: Icon = {
   xmlns: "http://www.w3.org/2000/svg",
-  viewBox: "0 0 448 512",
-  paths: ["M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"]
+  viewBox: "0 -960 960 960",
+  paths: ["M240-440q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h480q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H240Z"]
 }
-
-
 
 function CounterControl() {
   const [value, setValue] = useState(0)
-  const min = 0
-  const max = 10
+  const min = 1
+  const max = 9
 
   const handleIncrement = () => {
     setValue(value + 1)
@@ -37,10 +35,10 @@ function CounterControl() {
     <div className='CounterControl'>
       <Input type='number' className='Input--counterControl' value={value} min={min} max={max} readOnly/>
       <menu className='CounterControl-menu'>
-        <Button className='Button--decrement' onClick={handleDecrement} disabled={value !== 0 ? false : true}>
+        <Button className='Button--decrement' onClick={handleDecrement} disabled={value !== min ? false : true}>
           <IconContainer icon={minusIcon} />
         </Button>
-        <Button className='Button--increment' onClick={handleIncrement} disabled={value !== 10 ? false : true}>
+        <Button className='Button--increment' onClick={handleIncrement} disabled={value !== max ? false : true}>
           <IconContainer icon={plusIcon} />
         </Button>
       </menu>
