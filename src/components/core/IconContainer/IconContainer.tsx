@@ -2,8 +2,8 @@ import './IconContainer.css'
 import { Icon } from '../../../types/Icon.ts'
 
 interface IconContainerProps extends React.SVGAttributes<HTMLOrSVGElement> {
-  icon: Icon
   className?: string
+  icon: Icon
 }
 
 function IconContainer({ icon, className, ...props }: IconContainerProps) {

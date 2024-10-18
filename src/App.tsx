@@ -12,6 +12,10 @@ import CounterControl from './components/core/CounterControl/CounterControl.tsx'
 import Select from './components/core/Select/Select.tsx'
 import Popup from './components/core/Popup/Popup.tsx'
 import Table from './components/core/Table/Table.tsx'
+import SuccesNotification from './components/notifications/SuccesNotification/SuccesNotification.tsx'
+import ErrorNotification from './components/notifications/ErrorNotification/ErrorNotification.tsx'
+import InfoNotification from './components/notifications/InfoNotification/InfoNotification.tsx'
+import WarningNotification from './components/notifications/WarningNotification/WarningNotification.tsx'
 
 const persons: Person[] = [
   {
@@ -68,7 +72,10 @@ function App() {
       <Popup><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, fugiat nisi ab sit odio in odit optio soluta veniam.</p></Popup>
       <br />
       <br />
-      
+      {/* <ErrorNotification message='Error al intentar realizar la compra' /> */}
+      {/* <InfoNotification message='Da click en la cruz para cerrar' /> */}
+      {/* <SuccesNotification message='Compra realizada con éxito!' /> */}
+      <WarningNotification message='Si usted elimina esto perdera lo otro' />
     </>
   )
 }

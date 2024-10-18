@@ -1,0 +1,52 @@
+.WarningNotification {
+  background-color: #FEF7D1;
+  max-width: 400px;
+  max-height: fit-content;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  box-shadow: 0 .25rem .5rem .1rem #00000025;
+}
+.WarningNotification menu {
+  height: fit-content;
+}
+.WarningNotification-container, .WarningNotification-subcontainer {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+.WarningNotification-container {
+  gap: 1.7rem;
+}
+.WarningNotification-subcontainer svg {
+  fill: #F7C752;
+  width: 1.7rem;
+  height: 1.7rem;
+  min-width: 1.7rem;
+}
+.WarningNotification-message {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #755118;
+}
+.WarningNotification-cancel {
+  fill: #755118;
+  background-color: transparent;
+  display: flex;
+  border: none;
+  padding: 0;
+}
+.WarningNotification-cancel:hover {
+  fill: #755118;
+  background-color: transparent;
+}
+.WarningNotification-cancel svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}

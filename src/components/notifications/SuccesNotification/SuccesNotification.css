@@ -1,0 +1,52 @@
+.SuccesNotification {
+  background-color: #EDFBD8;
+  max-width: 400px;
+  max-height: fit-content;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  box-shadow: 0 .25rem .5rem .1rem #00000025;
+}
+.SuccesNotification menu {
+  height: fit-content;
+}
+.SuccesNotification-container, .SuccesNotification-subcontainer {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+.SuccesNotification-container {
+  gap: 1.7rem;
+}
+.SuccesNotification-subcontainer svg {
+  fill: #84D65A;
+  width: 1.7rem;
+  height: 1.7rem;
+  min-width: 1.7rem;
+}
+.SuccesNotification-message {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2B641E;
+}
+.SuccesNotification-cancel {
+  fill: #2B641E;
+  background-color: transparent;
+  display: flex;
+  border: none;
+  padding: 0;
+}
+.SuccesNotification-cancel:hover {
+  fill: #2B641E;
+  background-color: transparent;
+}
+.SuccesNotification-cancel svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
