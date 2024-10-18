@@ -3,7 +3,7 @@
   position: relative;
 }
 .Select-label {
-  color: #ccc;
+  color: var(--main-color);
   width: 100%;
   position: absolute;
   top: -15px;
@@ -39,10 +39,9 @@
 .Select-option {
   color: initial;
 }
-.Select-field:focus + .Select-label {
+.Select-field:focus + .Select-label, .Select-field:valid + .Select-label {
   color: var(--main-color);
 }
 .Select-field:invalid {
   color: #ccc;
 }
-/* .Select-field:required {} */

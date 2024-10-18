@@ -1,6 +1,6 @@
 .CounterControl {
   /*132px*/
-  width: 148px;
+  width: 120px;
   height: 38px;
   position: relative;
 }
@@ -10,14 +10,17 @@
   justify-content: center;
 }
 .Input--counterControl .Input-field {
-  width: 40px;
+  width: 50px;
+  height: 38px;
   text-align: center;
   margin: 0;
   padding: .4rem 0;
   padding-left: .8rem;
   padding-right: 0px;
-  border: 2px solid var(--main-color);
-  border-radius: .25rem;
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  border-radius: 0rem;
+  box-sizing: border-box;
 }
 .CounterControl-menu {
   width: 100%;
@@ -36,6 +39,18 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+}
+
+.Button--increment {
+  border-radius: 0 .25rem .25rem 0;
+}
+
+.Button--decrement {
+  border-radius: .25rem 0 0 .25rem;
+}
+
+.Button--increment:disabled, .Button--decrement:disabled {
+  border: 2px solid var(--main-color);
 }
 
 .CounterControl .IconContainer {

@@ -62,10 +62,13 @@ function App() {
       <IconContainer icon={circleXMarkIcon} className='Icon-circleXMark' />
       <br />
       <br />
-      <CounterControl></CounterControl>
+      <CounterControl min={1} max={9} />
       <br />
       <br />
       <Popup><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, fugiat nisi ab sit odio in odit optio soluta veniam.</p></Popup>
+      <br />
+      <br />
+      
     </>
   )
 }
